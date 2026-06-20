@@ -7,6 +7,7 @@ with HLE hooks for the hot compositor and rendering paths.
 
 This is a direct translation of the [Hemu-wasm](https://github.com/ParkerrDev/Hemu-wasm)
 HolyC/WASM emulator to standalone C++ with SDL2 replacing the browser host layer.
+Also requires disk image from [TempleOS-Web](https://github.com/ParkerrDev/TempleOS-Web)
 
 ## Quick start
 
@@ -14,6 +15,10 @@ HolyC/WASM emulator to standalone C++ with SDL2 replacing the browser host layer
 # Prerequisites: SDL2, zlib, cmake, a C++17 compiler
 # Debian/Ubuntu: sudo apt install libsdl2-dev zlib1g-dev cmake g++
 # Arch:          sudo pacman -S sdl2 zlib cmake gcc
+
+git clone https://github.com/ParkerrDev/Hemu-wasm
+git clone https://github.com/ParkerrDev/TempleOS-Web
+git clone https://github.com/tinkeros/hemu-sdl
 
 cd hemu-sdl
 cmake -B build
